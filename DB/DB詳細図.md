@@ -15,10 +15,7 @@
 |---|-----|--|--|--|--|
 |ユーザーID|user_id|varchar(50)|○|○||
 |ユーザー名|user_name|varchar(100)||○||
-|ユーザー名(カナ)|user_name_kana|varchar(100)||○||
 |ユーザー画像ファイル名|user_image|varchar(200)||||
-|郵便番号|user_postal_code|varchar(7)||○||
-|住所|user_address|varchar(100)||○||
 |メールアドレス|user_mail|varchar(100)||○||
 |パスワード|user_pass|varchar(50)||○||
 |登録日|reg_date|datetime||○||
@@ -37,12 +34,14 @@
 |削除日|del_date|datetime||||
 |フラグ|flag|int(1)||○||
 
-## m_iCategoryId
+## m_courseId
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|商品カテゴリID|iCategory_id|int(8)|○|○||
-|カテゴリ名|iCategory_name|varchar(100)||○||
+|コースID|course_id|int(8)|○|○||
+|カテゴリ名|course_name|varchar(100)||○||
+|作成者（ユーザー名）|user_id|||○||
+|カテゴリ名|course_name|varchar(100)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
