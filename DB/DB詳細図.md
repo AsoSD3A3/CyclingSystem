@@ -1,6 +1,6 @@
 # DB定義書
 ## ER図
-[ER図はこちら](https://github.com/aso2001036/kaihatu/blob/main/DB/ER%E5%9B%B3.md)
+[ER図はこちら](https://github.com/AsoSD3A3/CyclingSystem/blob/main/DB/ER%E5%9B%B3.md)
 
 *****
 <img src="./img/ER図3.png" width="500">
