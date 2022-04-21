@@ -39,23 +39,23 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |コースID|course_id|int(8)|○|○||
-|カテゴリ名|course_name|varchar(100)||○||
-|作成者（ユーザー名）|user_id|||○||
-|カテゴリ名|course_name|varchar(100)||○||
+|コース名|course_name|varchar(100)||○||
+|ユーザー(作成者)ID|user_id|int(8)||○||
+|チェックポイント数|checkpoint_num|int(8)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
 
-## m_shop
+## m_checkpoint
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|ショップID|shop_id|int(8)|○|○||
-|店名|shop_name|varchar(100)||○||
-|郵便番号|shop_postal_code|varchar(7)||○||
-|住所|shop_address|varchar(100)||○||
-|店説明|shop_explanation|varchar(1000)||||
-|店画像ファイル名|shop_image|varchar(200)||||
+|チェックポイントID|checkpoint_id|int(8)|○|○||
+|チェックポイント名|checkpoint_name|varchar(100)||○||
+|チェックポイント緯度|checkpoint_latitude|varchar(100)||○||
+|チェックポイント経度|checkpoint_longitude|varchar(100)||○||
+|チェックポイント説明説明|shop_explanation|varchar(1000)||||
+|チェックポイント画像ファイル名|shop_image|varchar(200)||||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
