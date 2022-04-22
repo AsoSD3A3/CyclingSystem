@@ -80,7 +80,6 @@
 |---|-----|--|--|--|--|
 |コースID|course_id|int(8)|○|○||
 |チェックポイントID|checkpoint_id|int(8)|○|○||
-
 |ユーザー(作成者)ID|user_id|int(8)||○||
 |チェックポイント数|checkpoint_num|int(8)||○||
 |登録日|reg_date|datetime||○||
