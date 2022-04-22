@@ -57,7 +57,32 @@
 |チェックポイント緯度|checkpoint_latitude|varchar(100)||○||
 |チェックポイント経度|checkpoint_longitude|varchar(100)||○||
 |チェックポイント説明説明|shop_explanation|varchar(1000)||||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+|削除日|del_date|datetime||||
+
+## m_checkpointID
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|チェックポイントID|checkpoint_id|int(8)|○|○||
+|チェックポイント画像ID|checkpointImage_id|int(8)|○|○||
 |チェックポイント画像ファイル名|shop_image|varchar(200)||||
+|ユーザー(作成者)ID|user_id|int(8)||○||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+|削除日|del_date|datetime||||
+
+
+## m_course_checkpoint
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|コースID|course_id|int(8)|○|○||
+|チェックポイントID|checkpoint_id|int(8)|○|○||
+
+|ユーザー(作成者)ID|user_id|int(8)||○||
+|チェックポイント数|checkpoint_num|int(8)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
@@ -74,73 +99,40 @@
 |登録日|reg_date|datetime||○||
 |削除日|del_date|datetime||||
 
-## m_shopItems
+## t_mycourse
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|ショップID|shop_id|int(8)|○|○|○|
-|商品ID|item_id|int(8)|○|○||
-|商品名|item_name|varchar(100)||○||
-|商品カテゴリID|iCategory_id|int(8)||○|○|
-|商品画像ファイル名1|item_image1|varchar(200)||||
-|商品画像ファイル名2|item_image2|varchar(200)||||
-|商品画像ファイル名3|item_image3|varchar(200)||||
-|商品画像ファイル名4|item_image4|varchar(200)||||
-|商品画像ファイル名5|item_image5|varchar(200)||||
-|商品説明|item_explanation|varchar(500)||||
-|単価|item_price|int(30)||○||
-|閲覧回数|count|int(30)||○||
-|登録日|reg_date|datetime||○||
-|更新日|upd_date|datetime||||
-|削除日|del_date|datetime||||
-
-## t_searchHistory
-
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
+|マイコースID|mycourse_id|int(8)|○|○||
 |ユーザーID|user_id|varchar(50)|○|○||
-|履歴ID|searchHistory_id|int(8)|○|○||
-|検索ワード|searchWord|varchar(200)||○||
+|コースID|course_id|int(8)||○|○|
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
 
-
-
-## t_favorite
+## t_bulletinBoard
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|お気に入りID|favorite_id|int(8)|○|○||
-|ユーザーID|user_id|varchar(50)|○|○||
-|ショップID|shop_id|int(8)||○|○|
-|商品ID|item_id|int(8)||○|○|
-|登録日|reg_date|datetime||○||
-|更新日|upd_date|datetime||||
-|削除日|del_date|datetime||||
+|掲示板ID|bulletinBoard_id|int(12)|○|○||
+|ユーザーID|user_id|int(12)||○|○|
+|掲示板タイトル|bulletinBoard_title|varchar(200)||○||
+|登録日|reg_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
 
-## t_cart
-
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|カートID|cart_id|int(8)|○|○||
-|ユーザーID|user_id|varchar(50)|○|○||
-|ショップID|shop_id|int(8)||○|○|
-|商品ID|item_id|int(8)||○|○|
-|個数|item_count|int(50)||○||
-|登録日|reg_date|datetime||○||
-|更新日|upd_date|datetime||||
-|削除日|del_date|datetime||||
-
-
-
-## t_information
+## t_bulletinBoardComment
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|お知らせID|information_id|int(8)|○|○||
-|タイトル|title|varchar(50)||○||
-|本文|text|varchar(1000)||○||
-|登録日|reg_date|datetime||○||
-|更新日|upd_date|datetime||||
-|削除日|del_date|datetime||||
+|掲示板ID|bulletinBoard_id|int(12)|○|○|○|
+|コメントID|comment_id|int(12)|○|○|○|
+|ユーザーID|user_id|int(12)||○|○|
+|コメント|comment|varchar(200)||○||
+|コメント先ID|commentDestination_id|int(12)||||
+|いいね(参考になった)|good_count|int(12)||○||
+|登録日|reg_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
+
+
