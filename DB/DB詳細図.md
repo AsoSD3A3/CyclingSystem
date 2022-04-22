@@ -61,17 +61,6 @@
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
 
-## m_checkpointID
-
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|チェックポイントID|checkpoint_id|int(8)|○|○||
-|チェックポイント画像ID|checkpointImage_id|int(8)|○|○||
-|チェックポイント画像ファイル名|shop_image|varchar(200)||||
-|ユーザー(作成者)ID|user_id|int(8)||○||
-|登録日|reg_date|datetime||○||
-|更新日|upd_date|datetime||||
-|削除日|del_date|datetime||||
 
 
 ## m_course_checkpoint
