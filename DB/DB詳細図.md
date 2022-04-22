@@ -18,6 +18,8 @@
 |ユーザー画像ファイル名|user_image|varchar(200)||||
 |メールアドレス|user_mail|varchar(100)||○||
 |パスワード|user_pass|varchar(50)||○||
+|年代|age|int(2)||○||
+|性別フラグ|sex_Flag|int(2)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
@@ -34,7 +36,7 @@
 |削除日|del_date|datetime||||
 |フラグ|flag|int(1)||○||
 
-## m_courseId
+## m_courseID
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
@@ -46,7 +48,7 @@
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
 
-## m_checkpoint
+## m_checkpointID
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
@@ -58,6 +60,18 @@
 |チェックポイント画像ファイル名|shop_image|varchar(200)||||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
+|削除日|del_date|datetime||||
+
+## t_CyclingHistory
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|サイクリング履歴ID|cyclingHistory_id|int(8)|○|○||
+|ユーザーID|user_id|varchar(50)|○|○||
+|コースID|course_id|int(8)||○|○|
+|経過時間|time|time||○|○|
+|距離|distance|int(255)||○|○|
+|登録日|reg_date|datetime||○||
 |削除日|del_date|datetime||||
 
 ## m_shopItems
@@ -91,6 +105,8 @@
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
 
+
+
 ## t_favorite
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
@@ -116,19 +132,7 @@
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
 
-## t_purchaseHistory
 
-|和名|属性名(カラム名)|型|PK|NN|FK|
-|---|-----|--|--|--|--|
-|購入履歴ID|purchaseHistory_id|int(8)|○|○||
-|ユーザーID|user_id|varchar(50)|○|○||
-|購入番号|purchase_num|int(8)||○||
-|ショップID|shop_id|int(8)||○|○|
-|商品ID|item_id|int(8)||○|○|
-|個数|item_count|int(50)||○||
-|登録日|reg_date|datetime||○||
-|更新日|upd_date|datetime||||
-|削除日|del_date|datetime||||
 
 ## t_information
 
