@@ -36,7 +36,7 @@
 |削除日|del_date|datetime||||
 |フラグ|flag|int(1)||○||
 
-## m_courseID
+## m_course
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
@@ -48,7 +48,27 @@
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
 
-## m_checkpointID
+## m_courseCategory
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|コースID|course_id|int(8)|○|○||
+|コースカテゴリID|courseCategory_id|int(8)|○|○||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+|削除日|del_date|datetime||||
+
+## m_courseCategoryID
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|コースカテゴリID|courseCategory_id|int(8)|○|○||
+|コースカテゴリー名|course_name|varchar(100)||○||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+|削除日|del_date|datetime||||
+
+## m_checkpoint
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
@@ -61,6 +81,25 @@
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
 
+## m_checkpointCategory
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|チェックポイントID|checkpoint_id|int(8)|○|○||
+|チェックポイントカテゴリID|checkpointCategory_id|int(8)|○|○||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+|削除日|del_date|datetime||||
+
+## m_checkpointCategoryID
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|チェックポイントカテゴリID|checkpointCategory_id|int(8)|○|○||
+|チェックポイントカテゴリー名|checkpoint_name|varchar(100)||○||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+|削除日|del_date|datetime||||
 
 
 ## m_course_checkpoint
@@ -70,7 +109,7 @@
 |コースID|course_id|int(8)|○|○||
 |チェックポイントID|checkpoint_id|int(8)|○|○||
 |ユーザー(作成者)ID|user_id|int(8)||○||
-|チェックポイント数|checkpoint_num|int(8)||○||
+|チェックポイントナンバー(コース中の何番目のチェックポイントかを記録する)|checkpoint_num|int(8)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
@@ -79,15 +118,31 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|サイクリング履歴ID|cyclingHistory_id|int(8)|○|○||
+|コース履歴ID|courseHistory_id|int(8)|○|○||
 |ユーザーID|user_id|varchar(50)|○|○||
 |コースID|course_id|int(8)||○|○|
-|経過時間|time|time||○|○|
+|開始時間|start_time|datetime||○|○|
+|終了時間|end_time|datetime||○|○|
 |距離|distance|int(255)||○|○|
+|完了フラグ|end_Flag|int(1)||○|○|
 |登録日|reg_date|datetime||○||
 |削除日|del_date|datetime||||
 
-## t_mycourse
+## t_course_checkpoint_History
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|チェックポイント履歴ID|checkpointHistory_id|int(8)|○|○||
+|ユーザーID|user_id|varchar(50)|○|○||
+|チェックポイントID|checkpoint_id|int(8)||○|○|
+|開始時間|start_time|datetime||○|○|
+|終了時間|end_time|datetime||○|○|
+|距離|distance|int(255)||○|○|
+|完了フラグ|end_Flag|int(1)||○|○|
+|登録日|reg_date|datetime||○||
+|削除日|del_date|datetime||||
+
+## t_myCourse
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
@@ -123,4 +178,21 @@
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
 
+## t_searchHistory
 
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|検索履歴ID|searchHistory_id|int(8)|○|○||
+|ユーザーID|user_id|varchar(50)|○|○||
+|検索ワード|searchWord|varchar(200)||○||
+|登録日|reg_date|datetime||○||
+|削除日|del_date|datetime||||
+
+## t_Photo
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|写真ID|Photo_id|int(8)|○|○||
+|写真名(画像ファイル名)|PhotoName|varchar(200)||○||
+|ユーザーID|user_id|varchar(50)|○|○||
+|登録日|reg_date|datetime||○||
+|削除日|del_date|datetime||||
