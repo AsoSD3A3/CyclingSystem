@@ -74,6 +74,82 @@ package "AnyPort" as target_system {
         del_date
     }
     
+     entity "チェックポイントマスタ" as checkpoint <m_checkpoint> <<M,MASTER_MARK_COLOR>> {
+        + checkpoint_id [PK]
+        --
+        checkpoint_name
+        checkpoint_latitude
+        checkpoint_longitude
+        shop_explanation
+        reg_date
+        upd_date
+        del_date
+    }
+    
+     entity "チェックポイントカテゴリマスタ" as checkpointCategory <m_checkpointCategory> <<M,MASTER_MARK_COLOR>> {
+        + checkpoint_id [PK][FK]
+        + checkpointCategory_id [PK][FK]
+        --
+        reg_date
+        upd_date
+        del_date
+    }
+    
+     entity "チェックポイントIDマスタ" as checkpointCategoryID <m_checkpointCategoryID> <<M,MASTER_MARK_COLOR>> {
+        + checkpointCategory_id [PK]
+        --
+        checkpoint_name
+        reg_date
+        upd_date
+        del_date
+    }
+    
+     entity "コースチェックポイントマスタ" as m_course_checkpoint <m_course_checkpoint> <<M,MASTER_MARK_COLOR>> {
+        + course_id [PK][FK]
+        + checkpoint_id [PK][FK]
+        --
+        user_id
+        checkpoint_num
+        reg_date
+        upd_date
+        del_date
+    }
+    
+     entity "コースヒストリテーブル" as CourseHistory <t_CourseHistory> <<T,TRANSACTION_MARK_COLOR>> {
+        + courseHistory_id [PK]
+        + user_id [PK][FK]
+        --
+        course_id
+        start_time
+        end_time
+        distance
+        end_Flag
+        reg_date
+        del_date
+    }
+    
+    entity "コースチェックポイントテーブル" as t_course_checkpoint_History <t_course_checkpoint_History> <<T,TRANSACTION_MARK_COLOR>> {
+        + checkpointHistory_id [PK]
+        + user_id [PK][FK]
+        --
+        checkpoint_id
+        start_time
+        end_time
+        distance
+        end_Flag
+        reg_date
+        del_date
+    }
+    
+    entity "マイコーステーブル" as myCourse <t_myCourse> <<T,TRANSACTION_MARK_COLOR>> {
+        + mycourse_id [PK]
+        + user_id [PK][FK]
+        --
+        course_id
+        reg_date
+        upd_date
+        del_date
+    }
     
         
     entity "検索履歴テーブル" as searchHistory <t_searchHistory> <<T,TRANSACTION_MARK_COLOR>> {
