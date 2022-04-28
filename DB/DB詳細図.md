@@ -114,7 +114,7 @@
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
 
-## t_CyclingHistory
+## t_CourseHistory
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
@@ -160,6 +160,7 @@
 |掲示板ID|bulletinBoard_id|int(12)|○|○||
 |ユーザーID|user_id|int(12)||○|○|
 |掲示板タイトル|bulletinBoard_title|varchar(200)||○||
+|コースID|course_id|int(8)||○|○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
@@ -174,6 +175,45 @@
 |コメント|comment|varchar(200)||○||
 |コメント先ID|commentDestination_id|int(12)||||
 |いいね(参考になった)|good_count|int(12)||○||
+|登録日|reg_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
+
+## t_RecruitmentBulletinBoard
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|募集掲示板ID|RecruitmentbulletinBoard_id|int(12)|○|○||
+|ユーザーID|user_id|int(12)||○|○|
+|掲示板タイトル|bulletinBoard_title|varchar(200)||○||
+|コースID|course_id|int(8)||○|○|
+|サイクリング予定日|schedule_date|datetime|||○||
+|参加者数|participantUser_num|int(12)||○||
+|登録日|reg_date|date||○||
+|更新日|upd_date|date||||
+|削除日|del_date|date||||
+
+## t_RecruitmentBulletinBoardComment
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|掲示板ID|bulletinBoard_id|int(12)|○|○|○|
+|コメントID|comment_id|int(12)|○|○|○|
+|ユーザーID|user_id|int(12)||○|○|
+|コメント|comment|varchar(200)||○||
+|コメント先ID|commentDestination_id|int(12)||||
+|いいね(参考になった)|good_count|int(12)||○||
+|登録日|reg_date|datetime|||○||
+|更新日|upd_date|datetime|||||
+|削除日|del_date|datetime|||||
+
+## t_participantUser
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|募集掲示板ID|RecruitmentbulletinBoard_id|int(12)|○|○||
+|ユーザーID|user_id|int(12)|○|○|○|
+|参加順番|participant_num|int(12)||○||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
