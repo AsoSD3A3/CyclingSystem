@@ -24,12 +24,11 @@ package "AnyPort" as target_system {
         + user_id[PK]
         --
         user_name
-        user_name_kana
         user_image
         user_mail
-        user_postal_code
-        user_address
         user_pass
+        age
+        sex_Flag
         reg_date
         upd_date
         del_date
@@ -45,47 +44,37 @@ package "AnyPort" as target_system {
         del_date
     }
     
-    entity "商品カテゴリIDマスタ" as iCategoryId <m_iCategory> <<M,MASTER_MARK_COLOR>> {
-        + iCategory_id [PK]
+    entity "コースマスタ" as course <m_course> <<M,MASTER_MARK_COLOR>> {
+        + course_id [PK]
         --
-        iCategory_name
+        course_name
+        user_id
+        checkpoint_num
         reg_date
         upd_date
         del_date
     }
     
-    entity "店マスタ" as shop <m_shop> <<M,MASTER_MARK_COLOR>> {
-        + shop_id [PK]
+    entity "コースカテゴリマスタ" as courseCategory <m_courseCategory> <<M,MASTER_MARK_COLOR>> {
+        + course_id [PK][FK]
+        + courseCategory_id [PK][FK]
         --
-        shop_name
-        shop_postal_code
-        shop_address
-        shop_explanation
-        shop_image
         reg_date
         upd_date
         del_date
     }
     
     
-    entity "店商品マスタ" as shopItems <m_shopItems> <<M,MASTER_MARK_COLOR>> {
-        + shop_id [PK][FK]
-        + item_id [PK]
+    entity "コースカテゴリIDマスタ" as m_courseCategoryID <m_courseCategoryID> <<M,MASTER_MARK_COLOR>> {
+        + courseCategory_id [PK]
         --
-        item_name
-        # iCategory_id [FK]
-        item_image1
-        item_image2
-        item_image3
-        item_image4
-        item_image5
-        item_explanation
-        item_price
-        count
+        course_name
         reg_date
         upd_date
         del_date
     }
+    
+    
         
     entity "検索履歴テーブル" as searchHistory <t_searchHistory> <<T,TRANSACTION_MARK_COLOR>> {
         + user_id [PK][FK]
@@ -96,6 +85,13 @@ package "AnyPort" as target_system {
         upd_date
         del_date
     }
+    
+    
+    
+    
+    
+    
+    
     
     entity "お気に入りテーブル" as favorite <t_favorite> <<T,TRANSACTION_MARK_COLOR>> {
         + user_id [PK][FK]
