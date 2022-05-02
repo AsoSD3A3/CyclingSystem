@@ -162,54 +162,70 @@ package "AnyPort" as target_system {
         del_date
     }
     
-    
-    
-    
-    
-    
-    
-    
-    entity "お気に入りテーブル" as favorite <t_favorite> <<T,TRANSACTION_MARK_COLOR>> {
-        + user_id [PK][FK]
-        + favorite_id [PK]
+    entity "写真テーブル" as Photo <t_Photo> <<T,TRANSACTION_MARK_COLOR>> {
+        + Photo_id [PK]
         --
-        shop_id [FK]
-        item_id [FK]
+        Photo_id
+        # user_id [FK]
+        reg_date
+        del_date
+    } 
+    
+    entity "掲示板テーブル" as bulletinBoard <t_bulletinBoard> <<T,TRANSACTION_MARK_COLOR>> {
+        + bulletinBoard_id [PK]
+        --
+        # user_id [FK]
+        bulletinBoard_title
+        # course_id[FK]
         reg_date
         upd_date
         del_date
     }
     
-    entity "カートテーブル" as cart <t_cart> <<T,TRANSACTION_MARK_COLOR>> {
-        + user_id [PK][FK]
-        + cart_id [PK]
+    entity "掲示板コメントテーブル" as bulletinBoardComment <t_bulletinBoardComment> <<T,TRANSACTION_MARK_COLOR>> {
+        + bulletinBoard_id [PK]
+        + comment_id [FK]
         --
-        # shop_id [FK]
-        # item_id [FK]
-        item_count
+        # user_id [FK]
+        comment
+        commentDestination_id
+        good_count
         reg_date
         upd_date
         del_date
     }
     
-    entity "購入履歴テーブル" as purchaseHistory <t_purchaseHistory> <<T,TRANSACTION_MARK_COLOR>> {
-        + user_id [PK][FK]
-        + purchaseHistory_id [PK]
+    entity "募集掲示板テーブル" as t_RecruitmentBulletinBoard <t_RecruitmentBulletinBoard> <<T,TRANSACTION_MARK_COLOR>> {
+        + RecruitmentbulletinBoard_id [PK]
         --
-        purchase_num
-        # shop_id [FK]
-        # item_id [FK]
-        item_count
+        # user_id [FK]
+        RecruitmentbulletinBoard_title
+        # course_id[FK]
+        schedule_date
+        participantUser_num
         reg_date
         upd_date
         del_date
     }
     
-    entity "お知らせテーブル" as information <t_information> <<T,TRANSACTION_MARK_COLOR>> {
-        + intformation_id [PK]
+    entity "掲示板コメントテーブル" as t_RecruitmentBulletinBoardComment <t_RecruitmentBulletinBoardComment> <<T,TRANSACTION_MARK_COLOR>> {
+        + bulletinBoard_id [PK]
+        + comment_id [FK]
         --
-        title
-        text
+        # user_id [FK]
+        comment
+        commentDestination_id
+        good_count
+        reg_date
+        upd_date
+        del_date
+    }
+    
+     entity "参加者テーブル" as participantUser <t_participantUser> <<T,TRANSACTION_MARK_COLOR>> {
+        + RecruitmentbulletinBoard_id [PK][FK]
+        + user_id [PK][FK]
+        --
+        participant_num
         reg_date
         upd_date
         del_date
