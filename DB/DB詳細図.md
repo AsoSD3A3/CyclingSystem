@@ -13,9 +13,9 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|ユーザーID|user_id|varchar(50)|○|○||
+|ユーザーID|user_id|int(8)|○|○||
 |ユーザー名|user_name|varchar(100)||○||
-|ユーザー画像ID|user_image_id|varchar(200)|||○|
+|ユーザー画像ID|user_image_id|int(8)|||○|
 |メールアドレス|user_mail|varchar(100)||○||
 |パスワード|user_pass|varchar(50)||○||
 |年代|age|int(2)||○||
@@ -107,9 +107,8 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|コースID|course_id|int(8)|○|○||
-|チェックポイントID|checkpoint_id|int(8)|○|○||
-|ユーザー(作成者)ID|user_id|int(8)||○|○|
+|コースID|course_id|int(8)|○|○|○|
+|チェックポイントID|checkpoint_id|int(8)|○|○|○|
 |チェックポイントナンバー(コース中の何番目のチェックポイントかを記録する)|checkpoint_num|int(8)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
@@ -120,7 +119,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |コース履歴ID|courseHistory_id|int(8)|○|○||
-|ユーザーID|user_id|varchar(50)|○|○|○|
+|ユーザーID|user_id|int(8)|○|○|○|
 |コースID|course_id|int(8)||○|○|
 |開始時間|start_time|datetime||○||
 |終了時間|end_time|datetime||○||
@@ -134,7 +133,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |チェックポイント履歴ID|checkpointHistory_id|int(8)|○|○||
-|ユーザーID|user_id|varchar(50)|○|○||
+|ユーザーID|user_id|int(8)|○|○|○|
 |チェックポイントID|checkpoint_id|int(8)||○|○|
 |コース履歴ID|courseHistory_id|int(8)||○|○|
 |開始時間|start_time|datetime||○||
@@ -149,7 +148,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |マイコースID|mycourse_id|int(8)|○|○||
-|ユーザーID|user_id|varchar(50)|○|○|○|
+|ユーザーID|user_id|int(8)|○|○|○|
 |コースID|course_id|int(8)||○|○|
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
@@ -159,8 +158,8 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|掲示板ID|bulletinBoard_id|int(12)|○|○||
-|ユーザーID|user_id|int(12)||○|○|
+|掲示板ID|bulletinBoard_id|int(8)|○|○||
+|ユーザーID|user_id|int(8)||○|○|
 |掲示板タイトル|bulletinBoard_title|varchar(200)||○||
 |コースID|course_id|int(8)||○|○|
 |登録日|reg_date|date||○||
@@ -171,12 +170,12 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|掲示板ID|bulletinBoard_id|int(12)|○|○|○|
-|コメントID|comment_id|int(12)|○|○|○|
-|ユーザーID|user_id|int(12)||○|○|
+|掲示板ID|bulletinBoard_id|int(8)|○|○|○|
+|コメントID|comment_id|int(8)|○|○|○|
+|ユーザーID|user_id|int(8)||○|○|
 |コメント|comment|varchar(200)||○||
-|コメント先ID|commentDestination_id|int(12)||||
-|いいね(参考になった)|good_count|int(12)||○||
+|コメント先ID|commentDestination_id|int(8)||||
+|いいね(参考になった)|good_count|int(8)||○||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
@@ -185,12 +184,12 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|募集掲示板ID|RecruitmentbulletinBoard_id|int(12)|○|○||
-|ユーザーID|user_id|int(12)||○|○|
+|募集掲示板ID|RecruitmentbulletinBoard_id|int(8)|○|○||
+|ユーザーID|user_id|int(8)||○|○|
 |募集掲示板タイトル|RecruitmentbulletinBoard_title|varchar(200)||○||
 |コースID|course_id|int(8)||○|○|
 |サイクリング予定日|schedule_date|datetime|||○||
-|参加者数|participantUser_num|int(12)||○||
+|参加者数|participantUser_num|int(8)||○||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
@@ -199,12 +198,12 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|掲示板ID|RecruitmentbulletinBoard_id|int(12)|○|○|○|
-|コメントID|comment_id|int(12)|○|○|○|
-|ユーザーID|user_id|int(12)||○|○|
+|掲示板ID|RecruitmentbulletinBoard_id|int(8)|○|○|○|
+|コメントID|comment_id|int(8)|○|○|○|
+|ユーザーID|user_id|int(8)||○|○|
 |コメント|comment|varchar(200)||○||
-|コメント先ID|commentDestination_id|int(12)||||
-|いいね(参考になった)|good_count|int(12)||○||
+|コメント先ID|commentDestination_id|int(8)||||
+|いいね(参考になった)|good_count|int(8)||○||
 |登録日|reg_date|datetime|||○||
 |更新日|upd_date|datetime|||||
 |削除日|del_date|datetime|||||
@@ -213,9 +212,9 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|募集掲示板ID|RecruitmentbulletinBoard_id|int(12)|○|○|○|
-|ユーザーID|user_id|int(12)|○|○|○|
-|参加順番|participant_num|int(12)||○||
+|募集掲示板ID|RecruitmentbulletinBoard_id|int(8)|○|○|○|
+|ユーザーID|user_id|int(8)|○|○|○|
+|参加順番|participant_num|int(8)||○||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
@@ -225,7 +224,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |検索履歴ID|searchHistory_id|int(8)|○|○||
-|ユーザーID|user_id|varchar(50)|○|○||
+|ユーザーID|user_id|int(8)|○|○|○|
 |検索ワード|searchWord|varchar(200)||○||
 |登録日|reg_date|datetime||○||
 |削除日|del_date|datetime||||
@@ -236,7 +235,7 @@
 |写真ID|Photo_id|int(8)|○|○||
 |チェックポイントID|checkpoint_id|int(8)|○|○|○|
 |写真名(画像ファイル名)|Photo_id|varchar(200)||○||
-|ユーザーID|user_id|varchar(50)||○|○|
+|ユーザーID|user_id|int(8)||○|○|
 |登録日|reg_date|datetime||○||
 |削除日|del_date|datetime||||
 
@@ -245,6 +244,6 @@
 |---|-----|--|--|--|--|
 |ユーザー画像ID|userimage_id|int(8)|○|○||
 |画像ファイル名|userimage_name|varchar(200)||○||
-|ユーザーID|user_id|varchar(50)||○|○|
+|ユーザーID|user_id|int(8)||○|○|
 |登録日|reg_date|datetime||○||
 |削除日|del_date|datetime||||
