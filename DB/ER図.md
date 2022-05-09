@@ -245,8 +245,8 @@ package "AnyPort" as target_system {
   }
 
 
-userImage                       }o-le-o|   users
-searchHistory                   }o-le-o|   users
+userImage                       }o-up-o|   users
+searchHistory                   }o-up-o|   users
 course                          }o-d-o|   course_checkpoint 
 checkpoint                      }o-up-o|   course_checkpoint
 course                          }o-ri-o|   courseCategory
