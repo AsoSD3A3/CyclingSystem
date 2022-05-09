@@ -24,7 +24,7 @@ package "AnyPort" as target_system {
         + user_id[PK]
         --
         user_name
-        user_image
+        # userimage_id [FK]
         user_mail
         user_pass
         age
@@ -48,7 +48,7 @@ package "AnyPort" as target_system {
         + course_id [PK]
         --
         course_name
-        user_id
+        # user_id [FK]
         checkpoint_num
         reg_date
         upd_date
@@ -80,7 +80,8 @@ package "AnyPort" as target_system {
         checkpoint_name
         checkpoint_latitude
         checkpoint_longitude
-        shop_explanation
+        checkpoint_explanation
+        # user_id [FK]
         reg_date
         upd_date
         del_date
@@ -108,18 +109,18 @@ package "AnyPort" as target_system {
         + course_id [PK][FK]
         + checkpoint_id [PK][FK]
         --
-        user_id
+        # user_id [FK]
         checkpoint_num
         reg_date
         upd_date
         del_date
     }
     
-     entity "コースヒストリテーブル" as CourseHistory <t_CourseHistory> <<T,TRANSACTION_MARK_COLOR>> {
+     entity "コース履歴テーブル" as CourseHistory <t_CourseHistory> <<T,TRANSACTION_MARK_COLOR>> {
         + courseHistory_id [PK]
         + user_id [PK][FK]
         --
-        course_id
+        # course_id [FK]
         start_time
         end_time
         distance
@@ -128,11 +129,12 @@ package "AnyPort" as target_system {
         del_date
     }
     
-    entity "コースチェックポイントテーブル" as t_course_checkpoint_History <t_course_checkpoint_History> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "コースチェックポイント履歴テーブル" as t_course_checkpoint_History <t_course_checkpoint_History> <<T,TRANSACTION_MARK_COLOR>> {
         + checkpointHistory_id [PK]
         + user_id [PK][FK]
         --
-        checkpoint_id
+        # checkpoint_id [FK]
+        # courseHistory_id [FK]
         start_time
         end_time
         distance
@@ -145,7 +147,7 @@ package "AnyPort" as target_system {
         + mycourse_id [PK]
         + user_id [PK][FK]
         --
-        course_id
+        # course_id [FK]
         reg_date
         upd_date
         del_date
@@ -162,10 +164,20 @@ package "AnyPort" as target_system {
         del_date
     }
     
-    entity "写真テーブル" as Photo <t_Photo> <<T,TRANSACTION_MARK_COLOR>> {
-        + Photo_id [PK]
+    entity "チェックポイント写真テーブル" as checkpointPhoto <t_checkpointPhoto> <<T,TRANSACTION_MARK_COLOR>> {
+        + photo_id [PK]
+        + checkpoint_id [PK][FK]
         --
-        Photo_id
+        photo_name
+        # user_id [FK]
+        reg_date
+        del_date
+    } 
+    
+    entity "ユーザー画像テーブル" as userImage <m_userImage> <<M,MASTER_MARK_COLOR>> {
+        + userimage_id [PK]
+        --
+        userimage_name
         # user_id [FK]
         reg_date
         del_date
