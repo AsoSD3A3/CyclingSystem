@@ -270,7 +270,7 @@ users                           }o-up-o|   bulletinBoardComment
 users                           }o-d-o|   RecruitmentBulletinBoard
 users                           }o-d-o|   RecruitmentBulletinBoardComment
 users                           }o-d-o|   participantUser
-users                           }o-up-o|   checkpointPhoto
+users                           }o-d-o|   checkpointPhoto
 users                           }o-up-o|   userImage
 pre_users                       }o-ri-o|   users
        
