@@ -265,8 +265,8 @@ users                           }o-ri-o|   checkpoint
 users                           }o-d-o|   CourseHistory
 users                           }o-up-o|   course_checkpoint_History
 users                           }o-up-o|   myCourse
-users                           }o-d-o|   bulletinBoard
-users                           }o-d-o|   bulletinBoardComment
+users                           }o-up-o|   bulletinBoard
+users                           }o-up-o|   bulletinBoardComment
 users                           }o-d-o|   RecruitmentBulletinBoard
 users                           }o-d-o|   RecruitmentBulletinBoardComment
 users                           }o-d-o|   participantUser
