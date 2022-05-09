@@ -65,7 +65,7 @@ package "AnyPort" as target_system {
     }
     
     
-    entity "コースカテゴリIDマスタ" as m_courseCategoryID <m_courseCategoryID> <<M,MASTER_MARK_COLOR>> {
+    entity "コースカテゴリIDマスタ" as courseCategoryID <m_courseCategoryID> <<M,MASTER_MARK_COLOR>> {
         + courseCategory_id [PK]
         --
         course_name
@@ -105,7 +105,7 @@ package "AnyPort" as target_system {
         del_date
     }
     
-     entity "コースチェックポイントマスタ" as m_course_checkpoint <m_course_checkpoint> <<M,MASTER_MARK_COLOR>> {
+     entity "コースチェックポイントマスタ" as course_checkpoint <m_course_checkpoint> <<M,MASTER_MARK_COLOR>> {
         + course_id [PK][FK]
         + checkpoint_id [PK][FK]
         --
@@ -128,7 +128,7 @@ package "AnyPort" as target_system {
         del_date
     }
     
-    entity "コースチェックポイント履歴テーブル" as t_course_checkpoint_History <t_course_checkpoint_History> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "コースチェックポイント履歴テーブル" as course_checkpoint_History <t_course_checkpoint_History> <<T,TRANSACTION_MARK_COLOR>> {
         + checkpointHistory_id [PK]
         + user_id [PK][FK]
         --
@@ -206,7 +206,7 @@ package "AnyPort" as target_system {
         del_date
     }
     
-    entity "募集掲示板テーブル" as t_RecruitmentBulletinBoard <t_RecruitmentBulletinBoard> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "募集掲示板テーブル" as RecruitmentBulletinBoard <t_RecruitmentBulletinBoard> <<T,TRANSACTION_MARK_COLOR>> {
         + RecruitmentbulletinBoard_id [PK]
         --
         # user_id [FK]
@@ -219,7 +219,7 @@ package "AnyPort" as target_system {
         del_date
     }
     
-    entity "掲示板コメントテーブル" as t_RecruitmentBulletinBoardComment <t_RecruitmentBulletinBoardComment> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "掲示板コメントテーブル" as RecruitmentBulletinBoardComment <t_RecruitmentBulletinBoardComment> <<T,TRANSACTION_MARK_COLOR>> {
         + bulletinBoard_id [PK]
         + comment_id [FK]
         --
