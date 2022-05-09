@@ -256,7 +256,7 @@ CourseHistory                   }o-up-o|   course
 course_checkpoint_History       }o-up-o|   checkpoint
 course_checkpoint_History       }o-up-o|   CourseHistory
 myCourse                        }o-up-o|   course 
-bulletinBoardComment            }o-up-o|   bulletinBoard 
+bulletinBoardComment            }o-le-o|   bulletinBoard 
 RecruitmentBulletinBoardComment }o-d-o|   RecruitmentBulletinBoard 
 RecruitmentBulletinBoard        }o-up-o|   participantUser
 checkpoint                      }o-up-o|   checkpointPhoto
