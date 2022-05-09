@@ -263,14 +263,14 @@ RecruitmentBulletinBoard        }o-up-o|   participantUser
 checkpoint                      }o-up-o|   checkpointPhoto
 users                           }o-up-o|   course
 users                           }o-up-o|   checkpoint
-users                           }o-up-o|   CourseHistory
+users                           }o-d-o|   CourseHistory
 users                           }o-up-o|   course_checkpoint_History
 users                           }o-up-o|   myCourse
 users                           }o-d-o|   bulletinBoard
 users                           }o-d-o|   bulletinBoardComment
 users                           }o-d-o|   RecruitmentBulletinBoard
 users                           }o-d-o|   RecruitmentBulletinBoardComment
-users                           }o-up-o|   participantUser
+users                           }o-d-o|   participantUser
 users                           }o-up-o|   checkpointPhoto
 users                           }o-up-o|   userImage
 pre_users                       }o-ri-o|   users
