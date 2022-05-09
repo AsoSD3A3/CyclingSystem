@@ -252,7 +252,7 @@ course                          }o-ri-o|   courseCategory
 courseCategoryID                }o-le-o|   courseCategory
 checkpoint                      }o-d-o|   checkpointCategory
 checkpointCategoryID            }o-le-o|   checkpointCategory
-CourseHistory                   }o-ri-o|   course 
+CourseHistory                   }o-up-o|   course 
 course_checkpoint_History       }o-ri-o|   checkpoint
 course_checkpoint_History       }o-up-o|   CourseHistory
 myCourse                        }o-up-o|   course 
