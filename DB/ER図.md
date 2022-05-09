@@ -255,7 +255,7 @@ checkpointCategoryID            }o-le-o|   checkpointCategory
 CourseHistory                   }o-up-o|   course 
 course_checkpoint_History       }o-ri-o|   checkpoint
 course_checkpoint_History       }o-up-o|   CourseHistory
-myCourse                        }o-d-o|   course 
+myCourse                        }o-up-o|   course 
 bulletinBoardComment            }o-le-o|   bulletinBoard 
 RecruitmentBulletinBoardComment }o-d-o|   RecruitmentBulletinBoard 
 RecruitmentBulletinBoard        }o-up-o|   participantUser
