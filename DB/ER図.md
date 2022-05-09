@@ -109,7 +109,6 @@ package "AnyPort" as target_system {
         + course_id [PK][FK]
         + checkpoint_id [PK][FK]
         --
-        # user_id [FK]
         checkpoint_num
         reg_date
         upd_date
@@ -245,16 +244,36 @@ package "AnyPort" as target_system {
 
   }
 
-shopItems             }o-le-o|   shop
-shopItems             }o-ri-o|   iCategoryId
-shopItems             }o-do-o|   purchaseHistory
-shopItems             }o-do-o|   cart
-shopItems             }o-do-o|   favorite
-searchHistory         }o-le-o|   users
-users                 |o-up-o|   purchaseHistory
-users                 |o-up-o|   cart
-users                 |o-up-o|   favorite
-pre_users             }o-ri-o|   users
+
+userImage                       }o-le-o|   users
+searchHistory                   }o-le-o|   users
+course                          }o-up-o|   course_checkpoint 
+checkpoint                      }o-up-o|   course_checkpoint
+course                          }o-up-o|   courseCategory
+courseCategoryID                }o-up-o|   courseCategory
+checkpoint                      }o-up-o|   checkpointCategory
+checkpointCategoryID            }o-up-o|   checkpointCategory
+CourseHistory                   }o-up-o|   course 
+course_checkpoint_History       }o-up-o|   checkpoint_id 
+course_checkpoint_History       }o-up-o|   courseHistory_id 
+myCourse                        }o-up-o|   course 
+bulletinBoardComment            }o-up-o|   bulletinBoard 
+RecruitmentBulletinBoardComment }o-up-o|   RecruitmentBulletinBoard 
+RecruitmentBulletinBoard        }o-up-o|   participantUser
+checkpoint                      }o-up-o|   checkpointPhoto
+users                           }o-up-o|   course
+users                           }o-up-o|   checkpoint
+users                           }o-up-o|   CourseHistory
+users                           }o-up-o|   course_checkpoint_History
+users                           }o-up-o|   myCourse
+users                           }o-up-o|   bulletinBoard
+users                           }o-up-o|   bulletinBoardComment
+users                           }o-up-o|   RecruitmentBulletinBoard
+users                           }o-up-o|   RecruitmentBulletinBoardComment
+users                           }o-up-o|   participantUser
+users                           }o-up-o|   checkpointPhoto
+users                           }o-up-o|   userImage
+pre_users                       }o-ri-o|   users
        
 
 @enduml
