@@ -261,7 +261,7 @@ RecruitmentBulletinBoardComment }o-up-o|   RecruitmentBulletinBoard
 RecruitmentBulletinBoard        }o-up-o|   participantUser
 checkpoint                      }o-up-o|   checkpointPhoto
 users                           }o-ri-o|   course
-users                           }o-up-o|   checkpoint
+users                           }o-ri-o|   checkpoint
 users                           }o-d-o|   CourseHistory
 users                           }o-up-o|   course_checkpoint_History
 users                           }o-up-o|   myCourse
