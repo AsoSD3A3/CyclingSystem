@@ -254,8 +254,8 @@ courseCategoryID                }o-up-o|   courseCategory
 checkpoint                      }o-up-o|   checkpointCategory
 checkpointCategoryID            }o-up-o|   checkpointCategory
 CourseHistory                   }o-up-o|   course 
-course_checkpoint_History       }o-up-o|   checkpoint_id 
-course_checkpoint_History       }o-up-o|   courseHistory_id 
+course_checkpoint_History       }o-up-o|   checkpoint
+course_checkpoint_History       }o-up-o|   courseHistory
 myCourse                        }o-up-o|   course 
 bulletinBoardComment            }o-up-o|   bulletinBoard 
 RecruitmentBulletinBoardComment }o-up-o|   RecruitmentBulletinBoard 
