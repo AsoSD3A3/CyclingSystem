@@ -249,8 +249,8 @@ userImage                       }o-le-o|   users
 searchHistory                   }o-le-o|   users
 course                          }o-up-o|   course_checkpoint 
 checkpoint                      }o-up-o|   course_checkpoint
-course                          }o-up-o|   courseCategory
-courseCategoryID                }o-up-o|   courseCategory
+course                          }o-le-o|   courseCategory
+courseCategoryID                }o-ri-o|   courseCategory
 checkpoint                      }o-up-o|   checkpointCategory
 checkpointCategoryID            }o-up-o|   checkpointCategory
 CourseHistory                   }o-up-o|   course 
