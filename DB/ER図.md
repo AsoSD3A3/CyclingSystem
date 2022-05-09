@@ -251,8 +251,8 @@ course                          }o-up-o|   course_checkpoint
 checkpoint                      }o-up-o|   course_checkpoint
 course                          }o-le-o|   courseCategory
 courseCategoryID                }o-ri-o|   courseCategory
-checkpoint                      }o-up-o|   checkpointCategory
-checkpointCategoryID            }o-up-o|   checkpointCategory
+checkpoint                      }o-le-o|   checkpointCategory
+checkpointCategoryID            }o-ri-o|   checkpointCategory
 CourseHistory                   }o-up-o|   course 
 course_checkpoint_History       }o-up-o|   checkpoint
 course_checkpoint_History       }o-up-o|   CourseHistory
