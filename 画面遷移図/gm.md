@@ -68,6 +68,7 @@ state Mypage{
 データ-down->ルート詳細
 ルート詳細-down->ルート投稿
 
+state Map{
 マップ:マップ表示
 マップ:目的地検索
 マップ-down->目的地
@@ -86,6 +87,7 @@ state Mypage{
 ルート開始選択-up->マップ :No
 ルート開始-up->ルート開始 :中断No
 ルート開始-up->マップ :中断Yes
+}
 
 state Post{
 投稿:投稿一覧
