@@ -96,7 +96,7 @@ package "Cyclingre" as target_system {
         del_date
     }
     
-     entity "チェックポイントIDマスタ" as checkpointCategoryID <m_checkpointCategoryID> <<M,MASTER_MARK_COLOR>> {
+     entity "チェックポイントカテゴリIDマスタ" as checkpointCategoryID <m_checkpointCategoryID> <<M,MASTER_MARK_COLOR>> {
         + checkpointCategory_id [PK]
         --
         checkpoint_name
