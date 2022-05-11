@@ -56,6 +56,7 @@ state Login{
 }
 
 Login-down->Mypage
+Mypage-up->HumMenu
 
 state Mypage{
 マイページ:ユーザー名
