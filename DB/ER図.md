@@ -219,8 +219,8 @@ package "Cyclingre" as target_system {
         del_date
     }
     
-    entity "掲示板コメントテーブル" as RecruitmentBulletinBoardComment <t_RecruitmentBulletinBoardComment> <<T,TRANSACTION_MARK_COLOR>> {
-        + bulletinBoard_id [PK]
+    entity "募集掲示板コメントテーブル" as RecruitmentBulletinBoardComment <t_RecruitmentBulletinBoardComment> <<T,TRANSACTION_MARK_COLOR>> {
+        + RecruitmentbulletinBoard_id [PK]
         + comment_id [FK]
         --
         # user_id [FK]
