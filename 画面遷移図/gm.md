@@ -20,6 +20,7 @@ calendar:
 情報変更:パスワード
 情報変更:再パスワード
 calendar-down->Group
+ログアウト-left->[*]
 
 
 state Group{
