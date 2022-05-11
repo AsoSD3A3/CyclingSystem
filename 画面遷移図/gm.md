@@ -15,13 +15,8 @@ calendar:
 ログアウト:
 }
 
-
-
-登録情報-->情報変更
-情報変更-->HumMenu
 calendar-up->Group
 Group-->HumMenu
-ログアウト-left->cyclringer
 
 state Group{
 カレンダー:日付
