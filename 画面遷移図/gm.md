@@ -105,5 +105,7 @@ state Map{
 ルート開始-up->マップ :中断Yes
 }
 
+投稿詳細-right->ルート開始選択
+
 @enduml
 ```
