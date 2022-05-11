@@ -38,7 +38,7 @@ state Group{
 
 menu-left->Mypage
 menu-down->Map
-menu-right->Post
+menu-up->Post
 
 cyclringer-down->Login
 state Login{
@@ -101,7 +101,7 @@ state Map{
 state Post{
 
 投稿:投稿一覧
-投稿-down->投稿詳細
+投稿-right->投稿詳細
 投稿詳細-->投稿
 投稿詳細:マップ
 投稿詳細:タイトル
