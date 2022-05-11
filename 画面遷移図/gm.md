@@ -13,8 +13,14 @@ calendar:
 ログアウト:
 }
 
-HumMenu-down->Group
-Group-->HumMenu
+登録情報-left->情報変更
+情報変更:ユーザー名
+情報変更:アイコン
+情報変更:メールアドレス
+情報変更:パスワード
+情報変更:再パスワード
+calendar-down->Group
+
 
 state Group{
 カレンダー:日付
