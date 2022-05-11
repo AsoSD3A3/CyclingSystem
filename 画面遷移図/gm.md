@@ -4,9 +4,11 @@
 [*]-down->cyclringer
 
 state menu{
+state undermenu{
 mypage:マイページへ
 cyclring:マップへ
 post:投稿一覧へ
+}
 
 state HumMenu{
 登録情報:
@@ -14,7 +16,6 @@ calendar:
 ログアウト:
 }
 }
-
 state Group{
 カレンダー:日付
 カレンダー:チャット
