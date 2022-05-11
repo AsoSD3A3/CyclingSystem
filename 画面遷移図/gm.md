@@ -13,7 +13,7 @@ calendar:
 ログアウト:
 }
 
-HumMenu-down-Group
+HumMenu-down->Group
 
 state Group{
 カレンダー:日付
