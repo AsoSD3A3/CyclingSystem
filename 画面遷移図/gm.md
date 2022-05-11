@@ -16,9 +16,6 @@ calendar:
 HumMenu-down->Group
 Group-->HumeMenu
 
-Mypage-down->HumMenu
-Post-down->HumMenu
-
 state Group{
 カレンダー:日付
 カレンダー:チャット
