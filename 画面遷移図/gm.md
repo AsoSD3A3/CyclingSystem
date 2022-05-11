@@ -84,7 +84,7 @@ state Map{
 
 作成ルート-down->ルート開始選択
 ルート作成-up->ルート開始選択
-ルート開始選択-left->ルート開始 :Yes
+ルート開始選択-left->ルート開始
 ルート開始-down->マップ :中断Yes
 
 state Post{
