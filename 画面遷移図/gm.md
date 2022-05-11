@@ -85,9 +85,9 @@ state Map{
 ルート作成-down->ルート開始選択
 ルート開始選択:Yes or No
 ルート開始選択-left->ルート開始 :Yes
-
 ルート開始-up->ルート開始 :中断No
 ルート開始-up->マップ :中断Yes
+ルート作成-left->ルート開始選択
 
 state Post{
 投稿:投稿一覧
