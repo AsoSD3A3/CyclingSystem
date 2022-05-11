@@ -163,7 +163,7 @@ package "AnyPort" as target_system {
         del_date
     }
     
-    entity "チェックポイント写真テーブル" as checkpointPhoto <t_checkpointPhoto> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "チェックポイント写真マスタ" as checkpointPhoto <m_checkpointPhoto> <<M,MASTER_MARK_COLOR>> {
         + photo_id [PK]
         + checkpoint_id [PK][FK]
         --
@@ -173,7 +173,7 @@ package "AnyPort" as target_system {
         del_date
     } 
     
-    entity "ユーザー画像テーブル" as userImage <m_userImage> <<M,MASTER_MARK_COLOR>> {
+    entity "ユーザー画像マスタ" as userImage <m_userImage> <<M,MASTER_MARK_COLOR>> {
         + userimage_id [PK]
         --
         userimage_name
