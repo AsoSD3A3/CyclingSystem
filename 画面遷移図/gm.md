@@ -87,6 +87,7 @@ state Mypage{
 ルート開始-up->ルート開始 :中断No
 ルート開始-up->マップ :中断Yes
 
+state Post{
 投稿:投稿一覧
 投稿-left->投稿詳細
 投稿詳細-right->投稿
@@ -95,6 +96,8 @@ state Mypage{
 投稿詳細:地名・距離
 投稿詳細:お気に入り
 投稿詳細:コメント
+}
+お気に入り-left->投稿詳細
 
 @enduml
 ```
