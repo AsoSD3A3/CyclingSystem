@@ -38,7 +38,7 @@ state Group{
 
 menu-left->Mypage
 menu-down->Map
-menu-up->Post
+menu-right->Post
 
 cyclringer-down->Login
 state Login{
