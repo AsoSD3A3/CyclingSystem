@@ -13,6 +13,10 @@ cyclring:do/mapへ遷移
 post:do/
 }
 
+mypage-left->マイページ
+cyclring-down->
+post-right->
+
 [*]-down->ログイン
 ログイン:enter/ユーザー名
 ログイン:enter/パスワード
