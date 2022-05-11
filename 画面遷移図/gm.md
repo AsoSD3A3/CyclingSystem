@@ -31,7 +31,7 @@ state Group{
 }
 
 menu-left->Mypage
-menu-dwon->Map
+menu-down->Map
 menu-right->Post
 
 [*]-down->Login
