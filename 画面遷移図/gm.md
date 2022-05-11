@@ -15,10 +15,6 @@ calendar:
 }
 }
 
-登録情報-right->情報変更
-
-
-
 state Group{
 カレンダー:日付
 カレンダー:チャット
