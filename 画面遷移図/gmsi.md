@@ -1,10 +1,16 @@
 ```uml
 @startuml
 
-state menu{
+state ﾊﾝﾊﾞｰｶﾞｰﾒﾆｭｰ{
 カレンダー:do/カレンダーを表示
 設定:do/
 ログアウト:do/
+}
+
+state menu{
+mypage:do/Mypageへ遷移
+cyclring:do/mapへ遷移
+post:do/
 }
 
 [*]-down->ログイン
@@ -30,6 +36,15 @@ Myfavorite:do/お気に入り一覧表示
 Mydata:do/data表示
 Mydata:do/過去ルート表示
 createroute:do/作成ロート一覧表示
+Myfavorite-down->投稿詳細
+投稿詳細:do/お気に入り機能
+投稿詳細:do/Go
+投稿詳細:do/back
+Mydata-down->ルート詳細
+ルート詳細:do/共有
+ルート詳細-right->共有ルート :共有クリック
+createroute-down->開始
+開始-right->cyclring
 
 @enduml
 ```
