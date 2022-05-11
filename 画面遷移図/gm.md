@@ -68,6 +68,8 @@ state Mypage{
 データ:過去ルート表示
 作成ルート:作成ルート一覧表示
 
+}
+
 state Post{
 
 投稿:投稿一覧
@@ -80,9 +82,6 @@ state Post{
 投稿詳細:コメント
 }
 お気に入り-down->投稿詳細
-}
-
-
 
 state Map{
 
