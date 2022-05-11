@@ -48,6 +48,7 @@ state Login{
 Login-down->Mypage
 
 state Mypage{
+[*]-down->マイページ
 マイページ:ユーザー名
 マイページ:ID
 マイページ:アイコン
