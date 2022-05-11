@@ -37,8 +37,8 @@ state Group{
 }
 
 menu-left->Mypage
-menu-down->Map
-menu-right->Post
+menu-right->Map
+menu-down->Post
 
 cyclringer-down->Login
 state Login{
@@ -90,7 +90,7 @@ state Map{
 ルート作成:地名・距離
 ルート作成:チェックポイント設定
 ルート作成:ルート保存
-ルート作成-right->ルート開始選択
+ルート作成-left->ルート開始選択
 ルート開始選択:Yes or No
 ルート開始選択-up->ルート開始 :Yes
 ルート開始選択-up->マップ :No
@@ -108,8 +108,6 @@ state Post{
 投稿詳細:地名・距離
 投稿詳細:お気に入り
 投稿詳細:コメント
-投稿詳細-->ルート開始選択
-
 }
 
 @enduml
