@@ -17,6 +17,7 @@ HumMenu-down->Group
 Group-->HumeMenu
 
 Mypage-down->HumMenu
+Post-down->HumMenu
 
 state Group{
 カレンダー:日付
@@ -106,7 +107,7 @@ state Post{
 投稿詳細:地名・距離
 投稿詳細:お気に入り
 投稿詳細:コメント
-投稿詳細-up->ルート開始選択
+投稿詳細-->ルート開始選択
 }
 
 @enduml
