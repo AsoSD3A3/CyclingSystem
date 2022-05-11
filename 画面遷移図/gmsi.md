@@ -46,13 +46,13 @@ Myfavorite-down->投稿詳細
 投稿詳細:do/back
 Mydata-down->ルート詳細
 ルート詳細:do/共有
-ルート詳細-right->共有ルート :共有クリック
+ルート詳細-left->共有ルート :共有クリック
 createroute-down->開始
 開始:do/Yes
 開始:do/No
-開始-right->cyclring開始
+開始-left->cyclring開始
 cyclring開始:do/中断
-cyclring開始-right->中断
+cyclring開始-left->中断
 中断:do/Yes
 中断:do/No
 
