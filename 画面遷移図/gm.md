@@ -24,7 +24,6 @@ state Group{
 グループ一覧-->カレンダー
 グループ一覧-->グループチャット
 グループチャット-->グループ一覧
-
 募集-->カレンダー
 参加-->カレンダー
 募集:
@@ -34,7 +33,7 @@ state Group{
 
 menu-left->Mypage
 menu-right->Map
-menu-down->Post
+menu-up->Post
 
 cyclringer-down->Login
 state Login{
