@@ -33,7 +33,7 @@ state Group{
 }
 
 menu-left->Mypage
-menu-left-down->Post
+menu-down->Post
 menu-down->Map
 
 [*]-down->Login
@@ -104,8 +104,6 @@ state Map{
 ルート開始-up->ルート開始 :中断No
 ルート開始-up->マップ :中断Yes
 }
-
-投稿詳細-->ルート開始選択
 
 @enduml
 ```
