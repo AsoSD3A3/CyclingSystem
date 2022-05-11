@@ -22,7 +22,6 @@ calendar:
 calendar-down->Group
 ログアウト-left->[*]
 
-
 state Group{
 カレンダー:日付
 カレンダー:チャット
