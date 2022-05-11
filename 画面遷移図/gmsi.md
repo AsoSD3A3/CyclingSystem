@@ -1,5 +1,12 @@
 ```uml
 @startuml
+
+state menu{
+カレンダー:do/カレンダーを表示
+設定:do/
+ログアウト:do/
+}
+
 [*]-down->ログイン
 ログイン:enter/ユーザー名
 ログイン:enter/パスワード
@@ -19,12 +26,10 @@
 マイページ-->Myfavorite :favoクリック
 マイページ-->Mydata :datクリック
 マイページ-->createroute :creクリック
-
-state menu{
-カレンダー:do/カレンダーを表示
-設定:do/
-ログアウト:do/
-}
+Myfavorite:do/お気に入り一覧表示
+Mydata:do/data表示
+Mydata:do/過去ルート表示
+createroute:do/作成ロート一覧表示
 
 @enduml
 ```
