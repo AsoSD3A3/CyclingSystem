@@ -32,8 +32,8 @@ state Group{
 参加-->参加詳細
 }
 
-menu-right->Mypage
-menu-left->Map
+menu-left->Mypage
+menu-right->Map
 menu-down->Post
 
 [*]-down->Login
