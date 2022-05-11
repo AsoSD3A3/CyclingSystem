@@ -98,6 +98,7 @@ state Map{
 ルート開始-up->マップ :中断Yes
 }
 
+Post-up->HumMenu
 state Post{
 
 投稿:投稿一覧
