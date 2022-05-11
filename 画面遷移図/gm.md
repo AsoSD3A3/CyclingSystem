@@ -7,6 +7,10 @@ cyclring:マップへ
 post:投稿一覧へ
 }
 
+menu-left->Mypage
+menu-down->Map
+menu-right->Post
+
 state Login{
 ログイン:メールアドレス
 ログイン:パスワード
