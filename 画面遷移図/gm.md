@@ -7,12 +7,12 @@ state menu{
 mypage:マイページへ
 cyclring:マップへ
 post:投稿一覧へ
-}
 
 state HumMenu{
 登録情報:
 calendar:
 ログアウト:
+}
 }
 
 登録情報-right->情報変更
