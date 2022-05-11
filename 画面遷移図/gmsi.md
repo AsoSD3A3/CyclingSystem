@@ -34,12 +34,13 @@ menu-right->投稿一覧
 マイページ:アイコン
 マイページ:走行距離
 マイページ-->Myfavorite :favoクリック
+Myfavorite-->マイページ :backクリック
 マイページ-->Mydata :datクリック
 マイページ-->createroute :creクリック
 Myfavorite:do/お気に入り一覧表示
 Mydata:do/data表示
 Mydata:do/過去ルート表示
-createroute:do/作成ロート一覧表示
+createroute:do/作成ルート一覧表示
 Myfavorite-down->投稿詳細
 投稿詳細:do/お気に入り機能
 投稿詳細:do/Go
