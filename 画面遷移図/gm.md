@@ -15,6 +15,8 @@ calendar:
 
 HumMenu-down->Group
 Group-->HumMenu
+Post-down->HumMenu
+Mypage-down-HumMenu
 
 state Group{
 カレンダー:日付
