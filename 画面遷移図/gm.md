@@ -8,7 +8,7 @@ post:投稿一覧へ
 }
 
 menu-left->Mypage
-menu-down->Map
+menu-up->Map
 menu-right->Post
 
 [*]-down->Login
