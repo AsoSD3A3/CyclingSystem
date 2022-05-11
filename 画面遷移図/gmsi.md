@@ -14,8 +14,8 @@ post:do/
 }
 
 mypage-left->マイページ
-cyclring-down->
-post-right->
+cyclring-down->map
+post-right->投稿一覧
 
 [*]-down->ログイン
 ログイン:enter/ユーザー名
