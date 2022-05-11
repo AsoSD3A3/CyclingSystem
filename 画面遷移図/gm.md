@@ -1,8 +1,6 @@
 ```uml
 @startuml
 
-[*]-down->cyclringer
-
 state menu{
 mypage:マイページへ
 cyclring:マップへ
@@ -14,6 +12,8 @@ state HumMenu{
 calendar:
 ログアウト:
 }
+
+HumMenu-down-Group
 
 state Group{
 カレンダー:日付
@@ -31,11 +31,11 @@ state Group{
 参加-->参加詳細
 }
 
-menu-left->Mypage
-menu-right->Map
-menu-up->Post
+menu-right->Mypage
+menu-up->Map
+menu-left->Post
 
-cyclringer-down->Login
+[*]-down->Login
 state Login{
 ログイン:メールアドレス
 ログイン:パスワード
