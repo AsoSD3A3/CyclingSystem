@@ -13,9 +13,9 @@ cyclring:do/mapへ遷移
 post:do/
 }
 
-mypage-left->マイページ
-cyclring-down->map
-post-right->投稿一覧
+menu-left->マイページ
+menu-down->map
+menu-right->投稿一覧
 
 [*]-down->ログイン
 ログイン:enter/ユーザー名
