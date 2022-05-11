@@ -15,8 +15,6 @@ calendar:
 
 HumMenu-down->Group
 Group-->HumMenu
-Post-down->HumMenu
-Mypage-down->HumMenu
 
 state Group{
 カレンダー:日付
@@ -64,6 +62,11 @@ state Mypage{
 お気に入り-->マイページ
 マイページ-down->データ
 データ-->マイページ
+データ-down->ルート詳細
+ルート詳細-->データ
+ルート詳細-down->ルート投稿
+ルート投稿-->ルート詳細
+
 マイページ-down->作成ルート
 作成ルート-->マイページ
 
