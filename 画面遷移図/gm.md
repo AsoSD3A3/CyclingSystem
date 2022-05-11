@@ -64,6 +64,8 @@ state Map{
 ルート開始選択:Yes or No
 ルート開始選択-down->ルート開始 :Yes
 ルート開始選択-up->マップ :No
+ルート開始-->ルート開始 :中断No
+ルート開始-->マップ :中断Yes
 }
 
 state Post{
