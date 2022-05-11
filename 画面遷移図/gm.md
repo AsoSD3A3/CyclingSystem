@@ -21,7 +21,7 @@ calendar:
 情報変更-->HumMenu
 calendar-up->Group
 Group-->HumMenu
-ログアウト-->cyclringer
+ログアウト-up->cyclringer
 
 state Group{
 カレンダー:日付
