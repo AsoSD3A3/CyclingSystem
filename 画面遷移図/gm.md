@@ -32,10 +32,6 @@ state Group{
 参加-->参加詳細
 }
 
-menu-left->Mypage
-menu-right->Map
-menu-down->Post
-
 [*]-down->Login
 state Login{
 ログイン:メールアドレス
@@ -104,8 +100,10 @@ state Post{
 投稿詳細:地名・距離
 投稿詳細:お気に入り
 投稿詳細:コメント
-投稿詳細-right->ルート開始選択
 }
+
+お気に入り-->投稿詳細
+投稿詳細-right->ルート開始選択
 
 @enduml
 ```
