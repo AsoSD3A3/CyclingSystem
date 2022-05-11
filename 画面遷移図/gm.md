@@ -16,7 +16,7 @@ calendar:
 }
 
 登録情報-right->情報変更
-calendar-up->Group
+
 
 
 state Group{
