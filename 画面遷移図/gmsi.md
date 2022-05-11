@@ -44,7 +44,9 @@ Mydata-down->ルート詳細
 ルート詳細:do/共有
 ルート詳細-right->共有ルート :共有クリック
 createroute-down->開始
-開始-right->cyclring
+開始-right->cyclring開始
+cyclring開始:do/中断
+cyclring開始-right->中断
 
 @enduml
 ```
