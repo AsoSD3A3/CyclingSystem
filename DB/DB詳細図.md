@@ -3,7 +3,7 @@
 [ER図はこちら](https://github.com/AsoSD3A3/CyclingSystem/blob/main/DB/ER%E5%9B%B3.md)
 
 *****
-<img src="./img/ER図3.png" width="500">
+<img src="./img/ER図4.png" width="500">
 
 *****
 
