@@ -15,12 +15,12 @@ calendar:
 ログアウト:
 }
 
-Mypage-->HumMenu
-Map-->HumMenu
-Post-->HumMenu
+
 
 登録情報-->情報変更
+情報変更-->HumMenu
 calendar-up->Group
+Group-->HumMenu
 ログアウト-->cyclringer
 
 state Group{
