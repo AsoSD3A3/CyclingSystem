@@ -33,8 +33,8 @@ menu-right->投稿一覧
 マイページ:ID
 マイページ:アイコン
 マイページ:走行距離
-マイページ-->Myfavorite :favoクリック
-Myfavorite-->マイページ :backクリック
+マイページ-->Myfavorite
+Myfavorite-->マイページ
 マイページ-->Mydata :datクリック
 マイページ-->createroute :creクリック
 Myfavorite:do/お気に入り一覧表示
