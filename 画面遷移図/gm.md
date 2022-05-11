@@ -33,8 +33,8 @@ state Group{
 }
 
 menu-left->Mypage
+menu-down->Post
 menu-down->Map
-menu-right->Post
 
 [*]-down->Login
 state Login{
