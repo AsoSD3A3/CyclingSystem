@@ -17,7 +17,7 @@ calendar:
 
 登録情報-right->情報変更
 calendar-up->Group
-Group-->HumMenu
+
 
 state Group{
 カレンダー:日付
@@ -56,7 +56,6 @@ state Login{
 }
 
 Login-down->Mypage
-Mypage-up->HumMenu
 
 state Mypage{
 マイページ:ユーザー名
@@ -98,7 +97,7 @@ state Map{
 ルート開始-up->マップ :中断Yes
 }
 
-Post-up->HumMenu
+
 state Post{
 
 投稿:投稿一覧
