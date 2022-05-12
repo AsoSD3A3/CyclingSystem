@@ -1,7 +1,7 @@
 ### 画面詳細図
 ## アカウント作成
 ### プロトタイプは以下のリンク先
-[プロトタイプ](https://www.figma.com/file/5bAHMcKrDB8THLNT72si3d/%E7%94%BB%E9%9D%A2?node-id=0%3A1)
+[プロトタイプ](https://www.figma.com/file/YLXi0XXJfyq6239uKAU8LF/cyclinger?node-id=103%3A548)
 *****
 <img src="./image/Sign in.png" width="250">
 
