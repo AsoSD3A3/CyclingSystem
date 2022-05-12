@@ -113,8 +113,8 @@ state Map{
 state Post{
 Post:HumMenu有
 投稿一覧:投稿一覧
-投稿一覧-right->投稿詳細
-投稿詳細-left->投稿一覧
+投稿一覧-left->投稿詳細
+投稿詳細-right->投稿一覧
 投稿詳細:マップ
 投稿詳細:タイトル
 投稿詳細:地名・距離
@@ -122,6 +122,7 @@ Post:HumMenu有
 投稿詳細:コメント
 }
 お気に入り-down->投稿詳細
+投稿詳細-left->ルート開始選択
 
 @enduml
 ```
