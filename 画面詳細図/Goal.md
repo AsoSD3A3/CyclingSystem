@@ -1,6 +1,6 @@
 ### 画面詳細図
 ### Goal
-[プロトタイプ](https://www.figma.com/file/YLXi0XXJfyq6239uKAU8LF/cyclinger?node-id=0%3A1)
+[プロトタイプ](https://www.figma.com/file/YLXi0XXJfyq6239uKAU8LF/cyclinger?node-id=103%3A548)
 *****
 <img src="./img/.png" width="250">
 
