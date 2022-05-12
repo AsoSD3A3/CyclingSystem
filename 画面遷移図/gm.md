@@ -60,7 +60,7 @@ state Login{
 Login-down->Mypage
 
 state Mypage{
-Mypage:Humber
+Mypage:HumMenu有
 マイページ:ユーザー名
 マイページ:ID
 マイページ:アイコン
@@ -107,8 +107,9 @@ state Map{
 ルート開始-down->マップ
 
 state Post{
+Post:HumMenu有
 投稿一覧:投稿一覧
-投稿-right->投稿詳細
+投稿一覧-right->投稿詳細
 投稿詳細-left->投稿一覧
 投稿詳細:マップ
 投稿詳細:タイトル
