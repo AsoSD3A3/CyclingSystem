@@ -23,6 +23,7 @@ calendar-down->Group
 ログアウト-left->[*]
 
 state Group{
+Group:HumMenu有
 カレンダー:日付
 カレンダー:ルーム一覧
 カレンダー-->募集
