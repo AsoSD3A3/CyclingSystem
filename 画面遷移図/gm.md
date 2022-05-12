@@ -105,6 +105,7 @@ state Map{
 ルート作成-up->ルート開始選択
 ルート開始選択-left->ルート開始
 ルート開始-down->マップ
+ルート開始-up->Goal
 
 state Post{
 Post:HumMenu有
