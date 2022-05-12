@@ -3,7 +3,7 @@
 ### プロトタイプは以下のリンク先
 [プロトタイプ](https://www.figma.com/file/YLXi0XXJfyq6239uKAU8LF/cyclinger?node-id=103%3A548)
 *****
-<img src="./image/.png" width="250">
+<img src="./img/InfoChange.png" width="250">
 
 *****
 
