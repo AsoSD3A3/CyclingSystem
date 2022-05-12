@@ -108,7 +108,13 @@ state Map{
 ルート作成-up->ルート開始選択
 ルート開始選択-left->ルート開始
 ルート開始-down->マップ
+ルート開始:マップ
+ルート開始:停止
 ルート開始-up->Goal
+Goal:マップ
+Goal:タイトル
+Goal:距離
+Goal:保存
 
 state Post{
 Post:HumMenu有
