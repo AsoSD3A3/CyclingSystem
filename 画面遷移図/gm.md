@@ -77,6 +77,8 @@ Mypage:HumMenu有
 作成ルート:作成ルート一覧表示
 }
 
+state route{
+route:HumMenu有
 データ-down->ルート詳細
 ルート詳細:マップ
 ルート詳細:地名・距離
@@ -85,6 +87,7 @@ Mypage:HumMenu有
 ルート詳細-down->ルート投稿
 ルート投稿:コメント
 ルート投稿-->ルート詳細
+}
 
 state Map{
 マップ:マップ表示
