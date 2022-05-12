@@ -2,7 +2,7 @@
 ### 開始
 [プロトタイプ](https://www.figma.com/file/YLXi0XXJfyq6239uKAU8LF/cyclinger?node-id=0%3A1)
 *****
-<img src="./image/開始.png" width="250">
+<img src="./img/start.png" width="250">
 
 |ID|要素|内容|アクション|イベント|対応DB|
 |--|----|----|---------|--------|------|
