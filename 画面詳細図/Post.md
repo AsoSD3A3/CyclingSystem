@@ -3,7 +3,7 @@
 ### プロトタイプは以下のリンク先
 [プロトタイプ](https://www.figma.com/file/YLXi0XXJfyq6239uKAU8LF/cyclinger?node-id=103%3A548)
 *****
-<img src="./image.png" width="250">
+<img src="./img/PostDtail.png" width="250">
 
 |ID|要素|内容|アクション|イベント|対応DB|
 |--|----|----|---------|--------|------|
@@ -11,7 +11,7 @@
 |2|検索|入力欄|テキスト入力||〇|
 |3|投稿されたルート|テキストボタン|クリック|-|〇|
 
-<img src="./image.png" width="250">
+<img src="./img/PostDtail.png" width="250">
 
 |ID|要素|内容|アクション|イベント|対応DB|
 |--|----|----|---------|--------|------|
