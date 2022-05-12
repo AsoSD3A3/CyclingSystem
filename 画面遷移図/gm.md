@@ -6,7 +6,6 @@ mypage:マイページへ
 cyclring:マップへ
 post:投稿一覧へ
 }
-
 state HumMenu{
 登録情報:
 calendar:
