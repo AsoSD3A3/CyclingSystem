@@ -14,11 +14,11 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |ユーザーID|user_id|int(8)|○|○||
-|ユーザー名|user_name|varchar(100)||○||
+|ユーザー名|user_name|varchar(20)||○||
 |ユーザー画像ID|user_image_id|int(8)|||○|
 |メールアドレス|user_mail|varchar(100)||○||
 |パスワード|user_pass|varchar(50)||○||
-|年代|age|int(2)||○||
+|年代|age|int(3)||○||
 |性別フラグ|sex_Flag|int(2)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
