@@ -17,7 +17,7 @@
 |ユーザー名|user_name|varchar(20)||○||
 |ユーザー画像ID|user_image_id|int(8)|||○|
 |メールアドレス|user_mail|varchar(100)||○||
-|パスワード|user_pass|varchar(50)||○||
+|パスワード|user_pass|varchar(20)||○||
 |年代|age|int(3)||○||
 |性別フラグ|sex_Flag|int(2)||○||
 |登録日|reg_date|datetime||○||
