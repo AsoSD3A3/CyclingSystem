@@ -175,9 +175,9 @@ package "Cyclingre" as target_system {
     
     entity "ユーザー画像マスタ" as userImage <m_userImage> <<M,MASTER_MARK_COLOR>> {
         + userimage_id [PK]
+        + user_id [PK][FK]
         --
         userimage_name
-        # user_id [FK]
         reg_date
         del_date
     } 
