@@ -162,9 +162,9 @@
 |ユーザーID|user_id|int(8)||○|○|
 |掲示板タイトル|bulletinBoard_title|varchar(200)||○||
 |コースID|course_id|int(8)||○|○|
-|登録日|reg_date|date||○||
-|更新日|upd_date|date||||
-|削除日|del_date|date||||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+|削除日|del_date|datetime||||
 
 ## t_bulletinBoardComment
 
@@ -176,9 +176,9 @@
 |コメント|comment|varchar(200)||○||
 |コメント先ID|commentDestination_id|int(8)||||
 |いいね(参考になった)|good_count|int(8)||○||
-|登録日|reg_date|date||○||
-|更新日|upd_date|date||||
-|削除日|del_date|date||||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+|削除日|del_date|datetime||||
 
 ## t_RecruitmentBulletinBoard
 
@@ -190,9 +190,9 @@
 |コースID|course_id|int(8)||○|○|
 |サイクリング予定日|schedule_date|datetime|||○||
 |参加者数|participantUser_num|int(8)||○||
-|登録日|reg_date|date||○||
-|更新日|upd_date|date||||
-|削除日|del_date|date||||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+|削除日|del_date|datetime||||
 
 ## t_RecruitmentBulletinBoardComment
 
@@ -215,9 +215,9 @@
 |募集掲示板ID|RecruitmentbulletinBoard_id|int(8)|○|○|○|
 |ユーザーID|user_id|int(8)|○|○|○|
 |参加順番|participant_num|int(8)||○||
-|登録日|reg_date|date||○||
-|更新日|upd_date|date||||
-|削除日|del_date|date||||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+|削除日|del_date|datetime||||
 
 ## t_searchHistory
 
