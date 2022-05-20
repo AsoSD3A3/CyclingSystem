@@ -234,7 +234,7 @@
 |---|-----|--|--|--|--|
 |写真ID|Photo_id|int(8)|○|○||
 |チェックポイントID|checkpoint_id|int(8)|○|○|○|
-|写真名(画像ファイル名)|Photo_id|varchar(200)||○||
+|写真名(画像ファイル名)|Photo_name|varchar(200)||○||
 |ユーザーID|user_id|int(8)||○|○|
 |登録日|reg_date|datetime||○||
 |削除日|del_date|datetime||||
