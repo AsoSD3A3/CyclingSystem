@@ -243,7 +243,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |ユーザー画像ID|userimage_id|int(8)|○|○||
+|ユーザーID|user_id|int(8)|○|○|○|
 |画像ファイル名|userimage_name|varchar(200)||○||
-|ユーザーID|user_id|int(8)||○|○|
 |登録日|reg_date|datetime||○||
 |削除日|del_date|datetime||||
