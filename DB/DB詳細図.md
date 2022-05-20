@@ -122,7 +122,7 @@
 |ユーザーID|user_id|int(8)|○|○|○|
 |コースID|course_id|int(8)||○|○|
 |開始時間|start_time|datetime||○||
-|終了時間|end_time|datetime||○||
+|終了時間|end_time|datetime||||
 |距離|distance|int(255)||○||
 |完了フラグ|end_Flag|int(1)||○||
 |登録日|reg_date|datetime||○||
@@ -160,7 +160,7 @@
 |---|-----|--|--|--|--|
 |掲示板ID|bulletinBoard_id|int(8)|○|○||
 |ユーザーID|user_id|int(8)||○|○|
-|掲示板タイトル|bulletinBoard_title|varchar(200)||○||
+|掲示板タイトル|bulletinBoard_title|varchar(50)||○||
 |コースID|course_id|int(8)||○|○|
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
@@ -186,7 +186,7 @@
 |---|-----|--|--|--|--|
 |募集掲示板ID|RecruitmentbulletinBoard_id|int(8)|○|○||
 |ユーザーID|user_id|int(8)||○|○|
-|募集掲示板タイトル|RecruitmentbulletinBoard_title|varchar(200)||○||
+|募集掲示板タイトル|RecruitmentbulletinBoard_title|varchar(50)||○||
 |コースID|course_id|int(8)||○|○|
 |サイクリング予定日|schedule_date|datetime|||○||
 |参加者数|participantUser_num|int(8)||○||
