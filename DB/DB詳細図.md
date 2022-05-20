@@ -214,7 +214,7 @@
 |---|-----|--|--|--|--|
 |募集掲示板ID|RecruitmentbulletinBoard_id|int(8)|○|○|○|
 |ユーザーID|user_id|int(8)|○|○|○|
-|参加順番|participant_num|int(8)||○||
+|参加順番|participant_num|int(2)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
