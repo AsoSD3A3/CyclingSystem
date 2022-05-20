@@ -74,8 +74,8 @@
 |---|-----|--|--|--|--|
 |チェックポイントID|checkpoint_id|int(8)|○|○||
 |チェックポイント名|checkpoint_name|varchar(100)||○||
-|チェックポイント緯度|checkpoint_latitude|varchar(100)||○||
-|チェックポイント経度|checkpoint_longitude|varchar(100)||○||
+|チェックポイント緯度|checkpoint_latitude|decimal(9,6)||○||
+|チェックポイント経度|checkpoint_longitude|decimal(9,6)||○||
 |チェックポイント説明説明|checkpoint_explanation|varchar(1000)||||
 |ユーザー(作成者)ID|user_id|int(8)||○|○|
 |登録日|reg_date|datetime||○||
