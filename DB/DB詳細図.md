@@ -189,7 +189,7 @@
 |募集掲示板タイトル|RecruitmentbulletinBoard_title|varchar(50)||○||
 |コースID|course_id|int(8)||○|○|
 |サイクリング予定日|schedule_date|datetime|||○||
-|参加者数|participantUser_num|int(8)||○||
+|参加者数|participantUser_num|int(2)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
