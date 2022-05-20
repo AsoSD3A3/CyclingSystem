@@ -63,7 +63,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |コースカテゴリID|courseCategory_id|int(8)|○|○||
-|コースカテゴリー名|course_name|varchar(100)||○||
+|コースカテゴリー名|courseCategory_name|varchar(100)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
@@ -97,7 +97,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |チェックポイントカテゴリID|checkpointCategory_id|int(8)|○|○||
-|チェックポイントカテゴリー名|checkpoint_name|varchar(100)||○||
+|チェックポイントカテゴリー名|checkpointCategory_name|varchar(100)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
