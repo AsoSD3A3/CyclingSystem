@@ -42,6 +42,7 @@
 |---|-----|--|--|--|--|
 |コースID|course_id|int(8)|○|○||
 |コース名|course_name|varchar(100)||○||
+|コース説明|course_explanation|varchar(200)||||
 |ユーザー(作成者)ID|user_id|int(8)||○|○|
 |チェックポイント数|checkpoint_num|int(8)||○||
 |登録日|reg_date|datetime||○||
@@ -200,6 +201,7 @@
 |---|-----|--|--|--|--|
 |掲示板ID|RecruitmentbulletinBoard_id|int(8)|○|○|○|
 |コメントID|comment_id|int(8)|○|○|○|
+|募集掲示板説明|RecruitmentbulletinBoard_explanation|varchar(200)||||
 |ユーザーID|user_id|int(8)||○|○|
 |コメント|comment|varchar(200)||○||
 |コメント先ID|commentDestination_id|int(8)||||
