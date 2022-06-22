@@ -33,6 +33,8 @@
 |メールアドレス|pre_user_mail|varchar(100)||○||
 |パスワード|pre_user_pass|varchar(255)||○||
 |年代|pre_age|int(3)||○||
+|性別フラグ|pre_sex_flag|int(2)||○||
+|トークン|pre_user_token|varchar(255)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
